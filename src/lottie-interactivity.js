@@ -82,6 +82,7 @@ export class LottieInteractivity {
 
   initScrollMode() {
     this.player.stop();
+    this.#scrollHandler();
     window.addEventListener('scroll', this.#scrollHandler, true);
   }
 
